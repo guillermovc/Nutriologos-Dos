@@ -6,12 +6,13 @@ El proyecto consiste en una aplicación de escritorio que llevará la bitácora 
 La intención es que dicha aplicación presente un informe detallado de la actividad de los pacientes y ayude a detectar distintos
 comportamientos en estos como:
 Clientes que dejaron de ir a consulta
-Clientes regulares
-Clientes irregulares
+Clientes regulares,
+Clientes irregulares,
 Etc.
 
 El equipo está conformado por:
--
--
--
--
+
+- GUILLERMO VELAZQUEZ CORONADO
+- ANDREW ALEJANDRO RIVERA ENCINAS
+- JUAN ANTONIO HERNANDEZ COTA
+- HUGO FRANCISCO CANO BEYLISS
