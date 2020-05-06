@@ -26,7 +26,6 @@ public class Login extends javax.swing.JFrame {
         setTitle("Acceso al sistema");
         setLocationRelativeTo(null);
     }
-
     
    
     @SuppressWarnings("unchecked")
@@ -101,6 +100,8 @@ public class Login extends javax.swing.JFrame {
                     String nombre = rs.getString("nombre");
                     String apellido = rs.getString("apellido");
                     
+                    JOptionPane.showMessageDialog(null, "Se ha logeado con el usuario: "
+                    + nombre + " " + apellido);
                     //new Menu().setVisible(true);
                     
                 }
