@@ -1,0 +1,8 @@
+body {
+    background-image: url('../images/oriental-tiles.png');
+}
+
+.jumbotron {
+    background-color: deepskyblue;
+    color: black;
+}
