@@ -16,3 +16,6 @@ El equipo está conformado por:
 - ANDREW ALEJANDRO RIVERA ENCINAS
 - JUAN ANTONIO HERNANDEZ COTA
 - HUGO FRANCISCO CANO BEYLISS
+
+Link de tablero de Trello: 
+https://trello.com/b/veWwQLjM/proyecto-ing-de-software
