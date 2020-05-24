@@ -86,7 +86,7 @@ public class Login extends javax.swing.JFrame {
         user = txt_usuario.getText().trim();
         pass = txt_password.getText().trim();
         
-        if (!user.equals("") || !pass.equals("")) {
+        if (!user.equals("") && !pass.equals("")) {
             
             try {
                 Connection cn = Conexion.conectar();
