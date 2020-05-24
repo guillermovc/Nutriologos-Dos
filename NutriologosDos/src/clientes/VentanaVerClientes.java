@@ -3,33 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ventanas;
+package clientes;
 
-import Diario.VentanaDiario;
-import clientes.agregarCliente;
+import javax.swing.WindowConstants;
 
 /**
  *
- * @author Guillermo
+ * @author JAHC
  */
-public class Consultor extends javax.swing.JFrame{
-    private menuPrincipal menuP = new menuPrincipal();
-    private VentanaDiario Diario = new VentanaDiario();
-    private agregarCliente aCliente = new agregarCliente();
-    /**
-     * Creates new form Consultor
-     */
-    public Consultor() {
-        initComponents();
-        add(menuP, "Center");
-        setSize(790,480);
-        setResizable(false);
-        this.setLocationRelativeTo(null);
-        setVisible(true);
-        setTitle("Asistencia");
-    }
+public class VentanaVerClientes extends javax.swing.JFrame {
     
-
+    VerClientes panel = new VerClientes();
+    
+    public VentanaVerClientes() {
+        initComponents();
+        setSize(890, 490);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setTitle("VerClientes");
+        add(panel, "Center");
+        
+        // Se cierra la interfaz pero el programa no finaliza
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+    }
+    /**
+     * Creates new form VentanaVerClientes
+     */
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -40,10 +39,7 @@ public class Consultor extends javax.swing.JFrame{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        contenedor = new javax.swing.JPanel();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().add(contenedor, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -65,28 +61,24 @@ public class Consultor extends javax.swing.JFrame{
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Consultor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaVerClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Consultor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaVerClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Consultor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaVerClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Consultor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaVerClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run(){
-            new Consultor().setVisible(true);
+            public void run() {
+                new VentanaVerClientes().setVisible(true);
             }
         });
     }
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel contenedor;
     // End of variables declaration//GEN-END:variables
-
-
 }

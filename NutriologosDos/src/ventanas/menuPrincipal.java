@@ -5,6 +5,9 @@
  */
 package ventanas;
 
+import Diario.VentanaDiario;
+import clientes.VentanaAgregarCliente;
+import clientes.VentanaVerClientes;
 import javax.swing.JPanel;
 
 /**
@@ -37,10 +40,16 @@ public class menuPrincipal extends javax.swing.JPanel {
         btnEstadisticas = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         btnAgregarPaciente = new javax.swing.JButton();
+        btnVerPacientes = new javax.swing.JButton();
 
         jLabel1.setText("Menú Principal");
 
         btnDiario.setText("Diario");
+        btnDiario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDiarioActionPerformed(evt);
+            }
+        });
 
         btnCalendario.setText("Calendario");
 
@@ -56,6 +65,13 @@ public class menuPrincipal extends javax.swing.JPanel {
             }
         });
 
+        btnVerPacientes.setText("Ver Pacientes");
+        btnVerPacientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerPacientesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -67,7 +83,9 @@ public class menuPrincipal extends javax.swing.JPanel {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(147, 147, 147)
-                        .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnCalendario, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                            .addComponent(btnVerPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
@@ -90,7 +108,9 @@ public class menuPrincipal extends javax.swing.JPanel {
                     .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnVerPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE))
                 .addGap(53, 53, 53))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -100,12 +120,23 @@ public class menuPrincipal extends javax.swing.JPanel {
         agregar_cliente.setVisible(true);
     }//GEN-LAST:event_btnAgregarPacienteActionPerformed
 
+    private void btnDiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDiarioActionPerformed
+        VentanaDiario diario = new VentanaDiario();
+        diario.setVisible(true);
+    }//GEN-LAST:event_btnDiarioActionPerformed
+
+    private void btnVerPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerPacientesActionPerformed
+        VentanaVerClientes ver_clientes = new VentanaVerClientes();
+        ver_clientes.setVisible(true);
+    }//GEN-LAST:event_btnVerPacientesActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarPaciente;
     private javax.swing.JButton btnCalendario;
     private javax.swing.JButton btnDiario;
     private javax.swing.JButton btnEstadisticas;
+    private javax.swing.JButton btnVerPacientes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
