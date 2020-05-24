@@ -1,0 +1,21 @@
+body {
+    background-image: url('../images/double-bubble-outline.png');
+}
+
+.jumbotron {
+    background-color: deepskyblue;
+    color: black;
+}
+
+.panel-heading {
+    background-color: deepskyblue !important;
+    color: white !important;
+}
+
+.panel-body {
+    color: #2b2b2b !important;
+}
+
+.navbar {
+    background-color: #2b2b2b;
+}
