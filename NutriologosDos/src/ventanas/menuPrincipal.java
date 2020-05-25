@@ -42,6 +42,7 @@ public class menuPrincipal extends javax.swing.JPanel {
         btnAgregarPaciente = new javax.swing.JButton();
         btnVerPacientes = new javax.swing.JButton();
         btnAgregarCita = new javax.swing.JButton();
+        btnVerConsultas = new javax.swing.JButton();
 
         jLabel1.setText("Menú Principal");
 
@@ -80,6 +81,13 @@ public class menuPrincipal extends javax.swing.JPanel {
             }
         });
 
+        btnVerConsultas.setText("Ver Consultas");
+        btnVerConsultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerConsultasActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,9 +104,10 @@ public class menuPrincipal extends javax.swing.JPanel {
                             .addComponent(btnVerPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                            .addComponent(btnDiario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnDiario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnVerConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -112,7 +121,9 @@ public class menuPrincipal extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addGap(104, 104, 104)
+                .addGap(31, 31, 31)
+                .addComponent(btnVerConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -146,6 +157,11 @@ public class menuPrincipal extends javax.swing.JPanel {
         agregar_cita.setVisible(true);
     }//GEN-LAST:event_btnAgregarCitaActionPerformed
 
+    private void btnVerConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerConsultasActionPerformed
+        VentanaVerConsultas ver_consultas = new VentanaVerConsultas();
+        ver_consultas.setVisible(true);
+    }//GEN-LAST:event_btnVerConsultasActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarCita;
@@ -153,6 +169,7 @@ public class menuPrincipal extends javax.swing.JPanel {
     private javax.swing.JButton btnCalendario;
     private javax.swing.JButton btnDiario;
     private javax.swing.JButton btnEstadisticas;
+    private javax.swing.JButton btnVerConsultas;
     private javax.swing.JButton btnVerPacientes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
