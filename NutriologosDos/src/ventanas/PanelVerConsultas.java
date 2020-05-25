@@ -19,12 +19,12 @@ import javax.swing.JOptionPane;
  *
  * @author PC_E&G
  */
-public class verConsultas extends javax.swing.JPanel {
+public class PanelVerConsultas extends javax.swing.JPanel {
 
     /**
      * Creates new form verConsultas
      */
-    public verConsultas() {
+    public PanelVerConsultas() {
         initComponents();
         cargarConsultas();
     }

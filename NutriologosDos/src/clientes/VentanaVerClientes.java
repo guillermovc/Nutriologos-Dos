@@ -13,7 +13,7 @@ import javax.swing.WindowConstants;
  */
 public class VentanaVerClientes extends javax.swing.JFrame {
     
-    VerClientes panel = new VerClientes();
+    PanelVerClientes panel = new PanelVerClientes();
     
     public VentanaVerClientes() {
         initComponents();

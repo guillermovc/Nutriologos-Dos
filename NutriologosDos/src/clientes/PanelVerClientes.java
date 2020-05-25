@@ -17,12 +17,12 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author JAHC
  */
-public class VerClientes extends javax.swing.JPanel {
+public class PanelVerClientes extends javax.swing.JPanel {
 
     /**
      * Creates new form VerClientes
      */
-    public VerClientes() {
+    public PanelVerClientes() {
         initComponents();
         
         try{

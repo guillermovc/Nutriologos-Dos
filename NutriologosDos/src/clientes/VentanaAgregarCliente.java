@@ -13,7 +13,7 @@ import javax.swing.WindowConstants;
  */
 public class VentanaAgregarCliente extends javax.swing.JFrame {
 
-    agregarCliente panel = new agregarCliente();
+    PanelAgregarCliente panel = new PanelAgregarCliente();
     
     public VentanaAgregarCliente() {
         initComponents();

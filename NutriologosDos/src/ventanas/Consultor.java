@@ -6,7 +6,7 @@
 package ventanas;
 
 import Diario.VentanaDiario;
-import clientes.agregarCliente;
+import clientes.PanelAgregarCliente;
 
 /**
  *
@@ -15,7 +15,7 @@ import clientes.agregarCliente;
 public class Consultor extends javax.swing.JFrame{
     private menuPrincipal menuP = new menuPrincipal();
     private VentanaDiario Diario = new VentanaDiario();
-    private agregarCliente aCliente = new agregarCliente();
+    private PanelAgregarCliente aCliente = new PanelAgregarCliente();
     /**
      * Creates new form Consultor
      */

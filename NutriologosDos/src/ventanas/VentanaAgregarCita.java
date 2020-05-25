@@ -13,7 +13,7 @@ import javax.swing.WindowConstants;
  */
 public class VentanaAgregarCita extends javax.swing.JFrame {
 
-   agregarCita panel = new agregarCita();
+   PanelAgregarCita panel = new PanelAgregarCita();
    
     public VentanaAgregarCita() {
         initComponents();

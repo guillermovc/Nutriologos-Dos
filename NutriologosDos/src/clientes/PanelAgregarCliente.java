@@ -19,12 +19,12 @@ import java.text.SimpleDateFormat;
  *
  * @author JAHC
  */
-public class agregarCliente extends javax.swing.JPanel {
+public class PanelAgregarCliente extends javax.swing.JPanel {
 
     /**
      * Creates new form agregarCliente
      */
-    public agregarCliente() {
+    public PanelAgregarCliente() {
         initComponents();
         
     }
