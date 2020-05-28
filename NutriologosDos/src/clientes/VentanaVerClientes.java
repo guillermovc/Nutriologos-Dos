@@ -17,7 +17,7 @@ public class VentanaVerClientes extends javax.swing.JFrame {
     
     public VentanaVerClientes() {
         initComponents();
-        setSize(890, 490);
+        setSize(580, 490);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("VerClientes");

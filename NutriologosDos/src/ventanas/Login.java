@@ -21,7 +21,7 @@ public class Login extends javax.swing.JFrame {
     
     public Login() {
         initComponents();
-        setSize(350,415);
+        setSize(400,450);
         setResizable(false);
         setTitle("Acceso al sistema");
         setLocationRelativeTo(null);
@@ -45,12 +45,7 @@ public class Login extends javax.swing.JFrame {
 
         txt_password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        btn_acceder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ACCEDER_NORM.png"))); // NOI18N
-        btn_acceder.setBorder(null);
-        btn_acceder.setBorderPainted(false);
-        btn_acceder.setContentAreaFilled(false);
-        btn_acceder.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ACCEDER_PRESS.png"))); // NOI18N
-        btn_acceder.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ACCEDER_HIGH.png"))); // NOI18N
+        btn_acceder.setText("Acceder");
         btn_acceder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_accederActionPerformed(evt);
@@ -68,29 +63,27 @@ public class Login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(130, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(136, 136, 136))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txt_password)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(txt_usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txt_password)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(txt_usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(btn_acceder)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(71, 71, 71)
+                        .addComponent(btn_acceder, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txt_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

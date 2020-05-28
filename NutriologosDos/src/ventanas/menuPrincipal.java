@@ -5,6 +5,9 @@
  */
 package ventanas;
 
+import citas.VentanaVerCita;
+import citas.VentanaAgregarCita;
+import clientes.VentanaModificarCliente;
 import Diario.VentanaDiario;
 import clientes.VentanaAgregarCliente;
 import clientes.VentanaVerClientes;
@@ -39,94 +42,36 @@ public class menuPrincipal extends javax.swing.JPanel {
         btnCalendario = new javax.swing.JButton();
         btnEstadisticas = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        btnAgregarPaciente = new javax.swing.JButton();
         btnVerPacientes = new javax.swing.JButton();
-        btnAgregarCita = new javax.swing.JButton();
         btnVerConsultas = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
 
         jLabel1.setText("Menú Principal");
 
-        btnDiario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_DIARIO_NORM.png"))); // NOI18N
-        btnDiario.setBorder(null);
-        btnDiario.setBorderPainted(false);
-        btnDiario.setContentAreaFilled(false);
-        btnDiario.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_DIARIO_PRESS.png"))); // NOI18N
-        btnDiario.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_DIARIO_HIGH.png"))); // NOI18N
+        btnDiario.setText("Diario");
         btnDiario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDiarioActionPerformed(evt);
             }
         });
 
-        btnCalendario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_CALENDARIO_NORM.png"))); // NOI18N
-        btnCalendario.setBorder(null);
-        btnCalendario.setBorderPainted(false);
-        btnCalendario.setContentAreaFilled(false);
-        btnCalendario.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_CALENDARIO_PRESS.png"))); // NOI18N
-        btnCalendario.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_CALENDARIO_HIGH.png"))); // NOI18N
+        btnCalendario.setText("Calendario");
 
-        btnEstadisticas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ESTADISTICAS_NORM.png"))); // NOI18N
-        btnEstadisticas.setBorder(null);
-        btnEstadisticas.setBorderPainted(false);
-        btnEstadisticas.setContentAreaFilled(false);
-        btnEstadisticas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ESTADISTICAS_PRESS.png"))); // NOI18N
-        btnEstadisticas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ESTADISTICAS_HIGH.png"))); // NOI18N
+        btnEstadisticas.setText("Estadísticas");
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Bienvenido Consultor");
 
-        btnAgregarPaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_REGISTRAR_PACIENTES_NORM.png"))); // NOI18N
-        btnAgregarPaciente.setBorder(null);
-        btnAgregarPaciente.setBorderPainted(false);
-        btnAgregarPaciente.setContentAreaFilled(false);
-        btnAgregarPaciente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_REGISTRAR_PACIENTES_PRESS.png"))); // NOI18N
-        btnAgregarPaciente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_REGISTRAR_PACIENTES_HIGH.png"))); // NOI18N
-        btnAgregarPaciente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarPacienteActionPerformed(evt);
-            }
-        });
-
-        btnVerPacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_PACIENTES_NORM.png"))); // NOI18N
-        btnVerPacientes.setBorder(null);
-        btnVerPacientes.setBorderPainted(false);
-        btnVerPacientes.setContentAreaFilled(false);
-        btnVerPacientes.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_PACIENTES_PRESS.png"))); // NOI18N
-        btnVerPacientes.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_PACIENTES_HIGH.png"))); // NOI18N
+        btnVerPacientes.setText("Pacientes");
         btnVerPacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerPacientesActionPerformed(evt);
             }
         });
 
-        btnAgregarCita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_CITA_NORM.png"))); // NOI18N
-        btnAgregarCita.setBorder(null);
-        btnAgregarCita.setBorderPainted(false);
-        btnAgregarCita.setContentAreaFilled(false);
-        btnAgregarCita.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_CITA_PRESS.png"))); // NOI18N
-        btnAgregarCita.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_CITA_HIGH.png"))); // NOI18N
-        btnAgregarCita.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarCitaActionPerformed(evt);
-            }
-        });
-
-        btnVerConsultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_CONSULTA_NORM.png"))); // NOI18N
-        btnVerConsultas.setBorder(null);
-        btnVerConsultas.setBorderPainted(false);
-        btnVerConsultas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_CONSULTA_PRESS.png"))); // NOI18N
-        btnVerConsultas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_CONSULTA_HIGH.png"))); // NOI18N
+        btnVerConsultas.setText("Consultas");
         btnVerConsultas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerConsultasActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Prueba ver cliente");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
             }
         });
 
@@ -137,70 +82,41 @@ public class menuPrincipal extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(276, 276, 276)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap()
+                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(btnCalendario)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnDiario)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnEstadisticas))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(btnVerPacientes)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnAgregarPaciente))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(502, 502, 502)
-                        .addComponent(btnAgregarCita))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(276, 276, 276)
-                        .addComponent(btnVerConsultas))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel1)))
-                .addGap(50, 50, 50))
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnVerPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnVerConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(195, 195, 195)
-                        .addComponent(jLabel3)
-                        .addGap(91, 91, 91)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnVerPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(btnAgregarCita, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(btnVerConsultas))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel1)))
-                .addGap(53, 53, 53))
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVerPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVerConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(189, 189, 189))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnAgregarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarPacienteActionPerformed
-        VentanaAgregarCliente agregar_cliente = new VentanaAgregarCliente();
-        agregar_cliente.setVisible(true);
-    }//GEN-LAST:event_btnAgregarPacienteActionPerformed
 
     private void btnDiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDiarioActionPerformed
         VentanaDiario diario = new VentanaDiario();
@@ -212,31 +128,18 @@ public class menuPrincipal extends javax.swing.JPanel {
         ver_clientes.setVisible(true);
     }//GEN-LAST:event_btnVerPacientesActionPerformed
 
-    private void btnAgregarCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarCitaActionPerformed
-        VentanaAgregarCita agregar_cita = new VentanaAgregarCita();
-        agregar_cita.setVisible(true);
-    }//GEN-LAST:event_btnAgregarCitaActionPerformed
-
     private void btnVerConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerConsultasActionPerformed
-        VentanaVerConsultas ver_consultas = new VentanaVerConsultas();
+        VentanaVerCita ver_consultas = new VentanaVerCita();
         ver_consultas.setVisible(true);
     }//GEN-LAST:event_btnVerConsultasActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        VentanaModificarCliente ver_cliente = new VentanaModificarCliente();
-        ver_cliente.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAgregarCita;
-    private javax.swing.JButton btnAgregarPaciente;
     private javax.swing.JButton btnCalendario;
     private javax.swing.JButton btnDiario;
     private javax.swing.JButton btnEstadisticas;
     private javax.swing.JButton btnVerConsultas;
     private javax.swing.JButton btnVerPacientes;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables

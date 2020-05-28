@@ -19,7 +19,7 @@ public class Consultor extends javax.swing.JFrame {
     public Consultor() {
         initComponents();
         add(menuP, "Center");
-        setSize(760,480);
+        setSize(775,480);
         setResizable(false);
         this.setLocationRelativeTo(null);
         setVisible(true);

@@ -17,7 +17,7 @@ public class VentanaAgregarCliente extends javax.swing.JFrame {
     
     public VentanaAgregarCliente() {
         initComponents();
-        setSize(621, 314);
+        setSize(650, 314);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Registrar paciente");
