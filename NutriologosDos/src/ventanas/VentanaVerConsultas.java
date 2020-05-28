@@ -17,7 +17,7 @@ public class VentanaVerConsultas extends javax.swing.JFrame {
     
     public VentanaVerConsultas() {
         initComponents();
-        setSize(730, 347);
+        setSize(868, 347);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Consultas");
