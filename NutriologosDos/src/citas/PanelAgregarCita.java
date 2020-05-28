@@ -194,7 +194,6 @@ public class PanelAgregarCita extends javax.swing.JPanel {
             }
             catch (SQLException e) {
                 System.err.println("Error en el boton agregar. " + e);
-                JOptionPane.showMessageDialog(null, "Error al agendar cita. Contacte al administrador");
             }
 
         }
