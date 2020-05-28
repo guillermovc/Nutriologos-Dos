@@ -24,9 +24,18 @@ public class PanelVerClientes extends javax.swing.JPanel {
      */
     public PanelVerClientes() {
         initComponents();
-        
-        try{
-            DefaultTableModel modelo = new DefaultTableModel();
+        cargarPacientes();
+    }
+    
+    public void cargarPacientes(){
+                try{
+            DefaultTableModel modelo = new DefaultTableModel(){
+                @Override
+                public boolean isCellEditable(int row, int column) {
+                    return false;
+                }
+                
+            };
             TablaClientes.setModel(modelo);
             
             PreparedStatement ps =null;
@@ -34,12 +43,13 @@ public class PanelVerClientes extends javax.swing.JPanel {
             Conexion conn = new Conexion();
             Connection con = conn.conectar();
             
-            String sql = "SELECT nombre, apellido, ciudad, direccion, telefono, mail, sexo, peso, estatura, edad FROM pacientes";
+            String sql = "SELECT id, nombre, apellido, ciudad, direccion, telefono, mail, sexo, peso, estatura, edad FROM pacientes";
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             ResultSetMetaData rsMd = rs.getMetaData();
             int cantidadColumnas = rsMd.getColumnCount();
             
+            modelo.addColumn("id");
             modelo.addColumn("Nombre");
             modelo.addColumn("Apellido");
             modelo.addColumn("Ciudad");
@@ -75,21 +85,22 @@ public class PanelVerClientes extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         TablaClientes = new javax.swing.JTable();
+        btnEliminarPaciente = new javax.swing.JButton();
 
         TablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Nombre", "Apellido", "Ciudad", "Dirección", "Teléfono", "Email", "Sexo", "Peso", "Estatura", "Edad"
+                "id", "Nombre", "Apellido", "Ciudad", "Dirección", "Teléfono", "Email", "Sexo", "Peso", "Estatura", "Edad"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Float.class, java.lang.Float.class, java.lang.Integer.class
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Float.class, java.lang.Float.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -112,7 +123,15 @@ public class PanelVerClientes extends javax.swing.JPanel {
             TablaClientes.getColumnModel().getColumn(7).setResizable(false);
             TablaClientes.getColumnModel().getColumn(8).setResizable(false);
             TablaClientes.getColumnModel().getColumn(9).setResizable(false);
+            TablaClientes.getColumnModel().getColumn(10).setResizable(false);
         }
+
+        btnEliminarPaciente.setText("Eliminar Paciente");
+        btnEliminarPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarPacienteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -122,19 +141,46 @@ public class PanelVerClientes extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 878, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(401, 401, 401)
+                .addComponent(btnEliminarPaciente)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(94, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
+                .addComponent(btnEliminarPaciente)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnEliminarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarPacienteActionPerformed
+        try {
+            DefaultTableModel model = new DefaultTableModel();
+            Connection cn = Conexion.conectar();
+            
+            int Fila = TablaClientes.getSelectedRow();
+            String id_paciente = TablaClientes.getValueAt(Fila, 0).toString();
+            //model.removeRow(Fila);
+            PreparedStatement pst = cn.prepareStatement ("DELETE FROM pacientes WHERE id=?");
+            pst.setString(1, id_paciente);
+            pst.execute();
+            cargarPacientes();
+            
+        
+        } catch (SQLException ex) {
+            System.err.println("Error al cargar datos. " + ex);
+//            JOptionPane.showMessageDialog(null, "Error al eliminar consulta. Contacte al administrador");
+        }
+    }//GEN-LAST:event_btnEliminarPacienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TablaClientes;
+    private javax.swing.JButton btnEliminarPaciente;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
