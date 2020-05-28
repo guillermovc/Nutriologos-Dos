@@ -8,17 +8,14 @@ package ventanas;
 import Diario.VentanaDiario;
 import clientes.PanelAgregarCliente;
 
-/**
- *
- * @author Guillermo
- */
-public class Consultor extends javax.swing.JFrame{
+
+
+public class Consultor extends javax.swing.JFrame {
+    
     private menuPrincipal menuP = new menuPrincipal();
     private VentanaDiario Diario = new VentanaDiario();
     private PanelAgregarCliente aCliente = new PanelAgregarCliente();
-    /**
-     * Creates new form Consultor
-     */
+    
     public Consultor() {
         initComponents();
         add(menuP, "Center");
@@ -26,7 +23,7 @@ public class Consultor extends javax.swing.JFrame{
         setResizable(false);
         this.setLocationRelativeTo(null);
         setVisible(true);
-        setTitle("Asistencia");
+        setTitle("Menú principal - Sesión de " + Login.user);
     }
     
 

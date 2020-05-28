@@ -40,16 +40,16 @@ public class PanelVerClientes extends javax.swing.JPanel {
             ResultSetMetaData rsMd = rs.getMetaData();
             int cantidadColumnas = rsMd.getColumnCount();
             
-            modelo.addColumn("nombre");
-            modelo.addColumn("apellido");
-            modelo.addColumn("ciudad");
-            modelo.addColumn("direcion");
-            modelo.addColumn("telefono");
-            modelo.addColumn("mail");
-            modelo.addColumn("sexo");
-            modelo.addColumn("peso");
-            modelo.addColumn("estatura");
-            modelo.addColumn("edad");
+            modelo.addColumn("Nombre");
+            modelo.addColumn("Apellido");
+            modelo.addColumn("Ciudad");
+            modelo.addColumn("Direcion");
+            modelo.addColumn("Telefono");
+            modelo.addColumn("Mail");
+            modelo.addColumn("Sexo");
+            modelo.addColumn("Peso");
+            modelo.addColumn("Estatura");
+            modelo.addColumn("Edad");
             
             while(rs.next()){
                 Object[] filas = new Object[cantidadColumnas];
