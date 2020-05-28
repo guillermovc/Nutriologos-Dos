@@ -126,7 +126,12 @@ public class PanelVerClientes extends javax.swing.JPanel {
             TablaClientes.getColumnModel().getColumn(10).setResizable(false);
         }
 
-        btnEliminarPaciente.setText("Eliminar Paciente");
+        btnEliminarPaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ELIMINAR_PACIENTE_NORM.png"))); // NOI18N
+        btnEliminarPaciente.setBorder(null);
+        btnEliminarPaciente.setBorderPainted(false);
+        btnEliminarPaciente.setContentAreaFilled(false);
+        btnEliminarPaciente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ELIMINAR_PACIENTE_PRESS.png"))); // NOI18N
+        btnEliminarPaciente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ELIMINAR_PACIENTE_HIGH.png"))); // NOI18N
         btnEliminarPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarPacienteActionPerformed(evt);
@@ -151,7 +156,7 @@ public class PanelVerClientes extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(btnEliminarPaciente)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

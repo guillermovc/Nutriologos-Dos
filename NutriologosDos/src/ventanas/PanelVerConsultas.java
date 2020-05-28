@@ -125,7 +125,12 @@ public class PanelVerConsultas extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tablaConsultas);
 
-        btnEliminarConsulta.setText("Eliminar Consulta");
+        btnEliminarConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ELIMINAR_CONSULTA_NORM.png"))); // NOI18N
+        btnEliminarConsulta.setBorder(null);
+        btnEliminarConsulta.setBorderPainted(false);
+        btnEliminarConsulta.setContentAreaFilled(false);
+        btnEliminarConsulta.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ELIMINAR_CONSULTA_PRESS.png"))); // NOI18N
+        btnEliminarConsulta.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ELIMINAR_CONSULTA_HIGH.png"))); // NOI18N
         btnEliminarConsulta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarConsultaActionPerformed(evt);

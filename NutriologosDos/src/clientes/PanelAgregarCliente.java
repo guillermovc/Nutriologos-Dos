@@ -86,9 +86,14 @@ public class PanelAgregarCliente extends javax.swing.JPanel {
 
         jLabel12.setText("Automáticamente se generará el ID del paciente y se guardará la FECHA DE REGISTRO.");
 
-        btnAgregar.setText("Agregar");
+        btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_NORM.png"))); // NOI18N
+        btnAgregar.setBorder(null);
+        btnAgregar.setBorderPainted(false);
+        btnAgregar.setContentAreaFilled(false);
         btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnAgregar.setDefaultCapable(false);
+        btnAgregar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_PRESS.png"))); // NOI18N
+        btnAgregar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_HIGH.png"))); // NOI18N
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarActionPerformed(evt);
@@ -194,7 +199,7 @@ public class PanelAgregarCliente extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
                             .addComponent(txt_peso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(btnAgregar)
                 .addGap(32, 32, 32)
                 .addComponent(jLabel12)

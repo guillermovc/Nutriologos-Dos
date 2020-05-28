@@ -54,7 +54,12 @@ public class PanelAgregarCita extends javax.swing.JPanel {
 
         jLabel4.setText("Descripcion:");
 
-        btnAgregarCita.setText("Agregar");
+        btnAgregarCita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_NORM.png"))); // NOI18N
+        btnAgregarCita.setBorder(null);
+        btnAgregarCita.setBorderPainted(false);
+        btnAgregarCita.setContentAreaFilled(false);
+        btnAgregarCita.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_PRESS.png"))); // NOI18N
+        btnAgregarCita.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_HIGH.png"))); // NOI18N
         btnAgregarCita.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarCitaActionPerformed(evt);
@@ -67,13 +72,15 @@ public class PanelAgregarCita extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAgregarCita)
+                .addGap(85, 85, 85))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(btnAgregarCita)))
+                        .addGap(103, 103, 103)
+                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -107,7 +114,7 @@ public class PanelAgregarCita extends javax.swing.JPanel {
                 .addGap(35, 35, 35)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txt_descripcion, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+                .addComponent(txt_descripcion, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(btnAgregarCita)
                 .addGap(31, 31, 31))
