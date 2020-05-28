@@ -47,42 +47,76 @@ public class menuPrincipal extends javax.swing.JPanel {
 
         jLabel1.setText("Menú Principal");
 
-        btnDiario.setText("Diario");
+        btnDiario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_DIARIO_NORM.png"))); // NOI18N
+        btnDiario.setBorder(null);
+        btnDiario.setBorderPainted(false);
+        btnDiario.setContentAreaFilled(false);
+        btnDiario.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_DIARIO_PRESS.png"))); // NOI18N
+        btnDiario.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_DIARIO_HIGH.png"))); // NOI18N
         btnDiario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDiarioActionPerformed(evt);
             }
         });
 
-        btnCalendario.setText("Calendario");
+        btnCalendario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_CALENDARIO_NORM.png"))); // NOI18N
+        btnCalendario.setBorder(null);
+        btnCalendario.setBorderPainted(false);
+        btnCalendario.setContentAreaFilled(false);
+        btnCalendario.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_CALENDARIO_PRESS.png"))); // NOI18N
+        btnCalendario.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_CALENDARIO_HIGH.png"))); // NOI18N
 
-        btnEstadisticas.setText("Estadísticas");
+        btnEstadisticas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ESTADISTICAS_NORM.png"))); // NOI18N
+        btnEstadisticas.setBorder(null);
+        btnEstadisticas.setBorderPainted(false);
+        btnEstadisticas.setContentAreaFilled(false);
+        btnEstadisticas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ESTADISTICAS_PRESS.png"))); // NOI18N
+        btnEstadisticas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_ESTADISTICAS_HIGH.png"))); // NOI18N
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Bienvenido Consultor");
 
-        btnAgregarPaciente.setText("Registrar paciente");
+        btnAgregarPaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_REGISTRAR_PACIENTES_NORM.png"))); // NOI18N
+        btnAgregarPaciente.setBorder(null);
+        btnAgregarPaciente.setBorderPainted(false);
+        btnAgregarPaciente.setContentAreaFilled(false);
+        btnAgregarPaciente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_REGISTRAR_PACIENTES_PRESS.png"))); // NOI18N
+        btnAgregarPaciente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_REGISTRAR_PACIENTES_HIGH.png"))); // NOI18N
         btnAgregarPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarPacienteActionPerformed(evt);
             }
         });
 
-        btnVerPacientes.setText("Ver Pacientes");
+        btnVerPacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_PACIENTES_NORM.png"))); // NOI18N
+        btnVerPacientes.setBorder(null);
+        btnVerPacientes.setBorderPainted(false);
+        btnVerPacientes.setContentAreaFilled(false);
+        btnVerPacientes.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_PACIENTES_PRESS.png"))); // NOI18N
+        btnVerPacientes.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_PACIENTES_HIGH.png"))); // NOI18N
         btnVerPacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerPacientesActionPerformed(evt);
             }
         });
 
-        btnAgregarCita.setText("Agregar cita");
+        btnAgregarCita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_CITA_NORM.png"))); // NOI18N
+        btnAgregarCita.setBorder(null);
+        btnAgregarCita.setBorderPainted(false);
+        btnAgregarCita.setContentAreaFilled(false);
+        btnAgregarCita.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_CITA_PRESS.png"))); // NOI18N
+        btnAgregarCita.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_AGREGAR_CITA_HIGH.png"))); // NOI18N
         btnAgregarCita.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarCitaActionPerformed(evt);
             }
         });
 
-        btnVerConsultas.setText("Ver Consultas");
+        btnVerConsultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_CONSULTA_NORM.png"))); // NOI18N
+        btnVerConsultas.setBorder(null);
+        btnVerConsultas.setBorderPainted(false);
+        btnVerConsultas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_CONSULTA_PRESS.png"))); // NOI18N
+        btnVerConsultas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Botones/BTN_VER_CONSULTA_HIGH.png"))); // NOI18N
         btnVerConsultas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerConsultasActionPerformed(evt);
@@ -103,47 +137,62 @@ public class menuPrincipal extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
+                        .addGap(276, 276, 276)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(147, 147, 147)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnCalendario, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                            .addComponent(btnVerPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(50, 50, 50)
+                        .addComponent(btnCalendario)
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnDiario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnVerConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnDiario)
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAgregarCita, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(187, Short.MAX_VALUE))
+                        .addComponent(btnEstadisticas))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(btnVerPacientes)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnAgregarPaciente))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(502, 502, 502)
+                        .addComponent(btnAgregarCita))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addComponent(btnVerConsultas))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel1)))
+                .addGap(50, 50, 50))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnVerConsultas, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnVerPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnAgregarCita, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(195, 195, 195)
+                        .addComponent(jLabel3)
+                        .addGap(91, 91, 91)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnVerPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(btnAgregarCita, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(btnVerConsultas))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel1)))
                 .addGap(53, 53, 53))
         );
     }// </editor-fold>//GEN-END:initComponents
