@@ -5,6 +5,8 @@
  */
 package clientes;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 /**
@@ -20,11 +22,17 @@ public class VentanaVerClientes extends javax.swing.JFrame {
         setSize(580, 490);
         setResizable(false);
         setLocationRelativeTo(null);
-        setTitle("VerClientes");
+        setTitle("Pacientes");
         add(panel, "Center");
         
         // Se cierra la interfaz pero el programa no finaliza
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+    }
+    
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/icono.png"));
+        return retValue;
     }
     /**
      * Creates new form VentanaVerClientes
@@ -40,6 +48,7 @@ public class VentanaVerClientes extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

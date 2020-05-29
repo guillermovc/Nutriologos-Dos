@@ -20,7 +20,7 @@ public class VentanaDiario extends javax.swing.JFrame {
         setSize(795, 480);
         setResizable(false);
         setLocationRelativeTo(null);
-        setTitle("Registrar paciente");
+        setTitle("Diario");
         add(panel, "Center");
         
         // Se cierra la interfaz pero el programa no finaliza

@@ -5,6 +5,8 @@
  */
 package citas;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 /**
@@ -17,7 +19,7 @@ public class VentanaVerCita extends javax.swing.JFrame {
     
     public VentanaVerCita() {
         initComponents();
-        setSize(624, 355);
+        setSize(875, 355);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Consultas");
@@ -25,6 +27,12 @@ public class VentanaVerCita extends javax.swing.JFrame {
         
         // Se cierra la interfaz pero el programa no finaliza
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+    }
+    
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/icono.png"));
+        return retValue;
     }
 
     /**
@@ -37,6 +45,7 @@ public class VentanaVerCita extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

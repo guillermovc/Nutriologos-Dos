@@ -119,8 +119,8 @@ public class menuPrincipal extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDiarioActionPerformed
-        VentanaDiario diario = new VentanaDiario();
-        diario.setVisible(true);
+        //VentanaDiario diario = new VentanaDiario();
+        //diario.setVisible(true);
     }//GEN-LAST:event_btnDiarioActionPerformed
 
     private void btnVerPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerPacientesActionPerformed

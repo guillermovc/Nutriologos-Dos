@@ -5,6 +5,8 @@
  */
 package clientes;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 /**
@@ -17,7 +19,7 @@ public class VentanaAgregarCliente extends javax.swing.JFrame {
     
     public VentanaAgregarCliente() {
         initComponents();
-        setSize(650, 314);
+        setSize(660, 315);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Registrar paciente");
@@ -25,6 +27,12 @@ public class VentanaAgregarCliente extends javax.swing.JFrame {
         
         // Se cierra la interfaz pero el programa no finaliza
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+    }
+    
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/icono.png"));
+        return retValue;
     }
 
     /**
@@ -37,6 +45,7 @@ public class VentanaAgregarCliente extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

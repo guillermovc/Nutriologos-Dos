@@ -6,6 +6,8 @@
 package clientes;
 
 import clientes.PanelModificarCliente;
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 /**
@@ -27,6 +29,12 @@ public class VentanaModificarCliente extends javax.swing.JFrame {
         // Se cierra la interfaz pero el programa no finaliza
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     }
+    
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/icono.png"));
+        return retValue;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -38,6 +46,7 @@ public class VentanaModificarCliente extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

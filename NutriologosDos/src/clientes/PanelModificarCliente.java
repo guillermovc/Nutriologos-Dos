@@ -289,11 +289,6 @@ public class PanelModificarCliente extends javax.swing.JPanel {
                 
                 pst.executeUpdate();
                 
-                // Ahora limpiamos todos los campos y los ponemos en verde indicando exito
-                for (JTextField campo : campos) {
-                    campo.setText("");
-                    campo.setBackground(Color.green);
-                }
                 
                 cn.close();
                 pst.close();

@@ -7,6 +7,8 @@ package ventanas;
 
 import Diario.VentanaDiario;
 import clientes.PanelAgregarCliente;
+import java.awt.Image;
+import java.awt.Toolkit;
 
 
 
@@ -26,6 +28,11 @@ public class Consultor extends javax.swing.JFrame {
         setTitle("Menú principal - Sesión de " + Login.user);
     }
     
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/icono.png"));
+        return retValue;
+    }
 
 
     /**
@@ -40,6 +47,7 @@ public class Consultor extends javax.swing.JFrame {
         contenedor = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         getContentPane().add(contenedor, java.awt.BorderLayout.CENTER);
 
         pack();
